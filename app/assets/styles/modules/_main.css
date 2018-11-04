@@ -1,0 +1,16 @@
+.main{
+    background: url("/assets/media/images/background/Background_Mountains.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFF9EB;
+    padding: 1em;
+    z-index: -2;
+    & h1{
+        margin: 1em;
+        line-height: 1.3em;
+      }
+}

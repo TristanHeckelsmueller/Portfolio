@@ -1,0 +1,10 @@
+.skills{
+    transform: translateY(-200vh);
+    background-color: #FFF9EB;
+    transition: 1s all ease;
+    padding: 1em;
+    z-index: -1;
+    @mixin atLarge{
+        padding: 4em;
+    }
+}

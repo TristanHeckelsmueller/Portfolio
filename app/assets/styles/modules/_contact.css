@@ -1,0 +1,26 @@
+.contact{
+    transform: translateX(-100vw);
+    background-color: #FFF9EB;
+    transition: 1s all ease;
+    padding: 1em;
+    z-index: -1;
+
+    & h2{
+    text-align: center;
+      }
+      &__content{
+        max-width: 500px;
+        margin: 0 auto;
+       }
+       &__wrapper{
+
+        }
+}
+.align-right{
+    float: right;
+    &::after{
+         clear: both;
+        content: '';
+         display: block;
+     }
+}

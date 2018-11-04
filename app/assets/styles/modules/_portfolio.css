@@ -1,0 +1,25 @@
+.portfolio {
+    transform: translateY(-170vh);
+    background-color: #FFF9EB;
+    transition: 1s all ease;
+    padding: 1em;
+    z-index: -1;
+    @mixin atMedium{
+        display: grid;
+        grid-gap: 5%;
+        grid-template-columns: auto auto;
+        grid-template-rows: 30% 30% 30%;
+        grid-template-columns: auto auto;
+        grid-template-rows: 30% 30% 30%;
+    }
+    &__tile{
+         background-size: cover !important;
+         background-repeat: no-repeat !important;
+        max-height: 100%;
+        & img{
+            width: 100%;
+            height: 100%;
+          }
+     }
+}
+

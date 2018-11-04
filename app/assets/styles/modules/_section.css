@@ -1,0 +1,35 @@
+.section{
+    width: 95%;
+    min-height: 88%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    position: absolute;
+    right: 2.5%;
+    transition: 1s all ease;
+
+    &--show{
+        transform: translateX(0) translateY(0) !important;
+     }
+}
+
+/*#Fzg{*/
+    /*background: url("/assets/media/images/projects/FZG.png");*/
+
+/*}*/
+/*#Speedpong{*/
+    /*background: url("/assets/media/images/projects/Speedpong.png");*/
+
+/*}*/
+/*#Dao{*/
+    /*background: url("/assets/media/images/projects/DAO.png");*/
+    /*!*background-color: azure;*!*/
+/*}*/
+/*#Herdahndel{*/
+    /*background: url("/assets/media/images/projects/HerdaHandel.png");*/
+
+/*}*/
+/*#Saufhampton{*/
+    /*background: url("/assets/media/images/projects/Ouiui.png");*/
+
+/*}*/
