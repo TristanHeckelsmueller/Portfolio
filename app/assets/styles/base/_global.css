@@ -1,62 +1,70 @@
 * {
   box-sizing: border-box;
-  font-family: 'Adamina', serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Arvo', serif;
+  font-family: 'Varela Round', sans-serif;
 }
 html {
-  font-size: 16px;
+  font-size: 14px;
+  scroll-behavior: smooth;
+  cursor: auto;
   @mixin atMedium{
     font-size: 18px;
   }
   @mixin atLarge{
-    font-size: 20px;
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px){
+  html{
+    cursor: none;
   }
 }
 body{
   overflow-x: hidden;
 }
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   color: #303030;
 }
-h1, h2, h3{
-  font-family: 'Adamina', serif;
+h2, h3{
+  font-family: 'Varela Round', sans-serif;
   margin: 0;
   font-weight: 100;
 }
 
 h1 {
-  text-transform: uppercase;
   font-size: 24px;
+  margin: 0;
+  font-family: 'Arvo', serif;
+  color: #303030;
   @mixin atMedium{
-    font-size: 26px;
+    font-size: 36px;
   }
   @mixin atLarge{
-    font-size: 28px;
+    font-size: 48px;
   }
 }
 h2 {
-  font-size: 22px;
+  font-size: 20px;
   @mixin atMedium{
-    font-size: 24px;
+    font-size: 32px;
   }
   @mixin atLarge{
-    font-size: 26px;
+    font-size: 42px;
   }
 }
 
-h3 {
-  font-size: 20px;
+h3 {  font-family: 'Varela Round', sans-serif;
+  font-size: 1em;
 @mixin atMedium{
-  font-size: 22px;
+  font-size: 1em;
 }
 @mixin atLarge{
-  font-size: 24px;
+  font-size: 1em;
 }
 }
 body{
-  background: #1B3B6F;
-  padding: 1em;
+  padding: 0em;
 }
 img {
   border-radius: 10px;
@@ -65,10 +73,96 @@ a {
   text-decoration: none;
   font-weight: 900;
   font-family: 'Poppins', sans-serif;
+  cursor: none;
 }
 a:visited{
   text-decoration: none;
   font-weight: 100;
-  font-family: 'Poppins', sans-serif;
-  color: #1B3B6F;
 }
+a:hover, .header__navigation__list--item:hover {
+  animation: wiggle;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes wiggle {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(-5deg);}
+  50% {transform: rotate(5deg);}
+  75% {transform: rotate(-2.5deg);}
+  100% {transform: rotate(0deg);}
+}
+.linear-border {
+  background: linear-gradient(-45deg, #830000, #303030);
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  animation: Gradient 2s cubic-bezier(.36,.07,.19,.97) both;
+  animation-iteration-count: infinite;
+  width: 100%;
+  height: 5vh;
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+#cursor {
+  cursor: none;
+  width: 25px;
+  height: 25px;
+  background: url("/assets/media/images/cursor.png") no-repeat left top;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  transform: rotate(0deg);
+  transition:  width 1s, height 1s, transform 1s;
+  display: none;
+
+}
+@media (min-width: 1200px){
+  #cursor{
+    display: block;   
+  }
+}
+.cursor--click {
+  width: 30px !important;
+  height: 30px !important;
+  transform: rotateZ(360deg) !important;
+  transition:  width 1s, height 1s, transform 1s;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #F90;	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+

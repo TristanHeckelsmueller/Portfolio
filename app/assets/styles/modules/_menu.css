@@ -1,0 +1,18 @@
+.menu {
+    background: #303030;
+    position: fixed;
+    transform: translateX(-100vw);
+    transition: 1s all ease;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    &--open {
+        transition: 1s all ease;
+        transform: translateX(0vw);
+    }
+}
+
+

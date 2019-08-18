@@ -1,25 +1,126 @@
 .portfolio {
-    transform: translateY(-170vh);
-    background-color: #FFF9EB;
-    transition: 1s all ease;
-    padding: 1em;
-    z-index: -1;
-    @mixin atMedium{
-        display: grid;
-        grid-gap: 5%;
-        grid-template-columns: auto auto;
-        grid-template-rows: 30% 30% 30%;
-        grid-template-columns: auto auto;
-        grid-template-rows: 30% 30% 30%;
-    }
-    &__tile{
-         background-size: cover !important;
-         background-repeat: no-repeat !important;
-        max-height: 100%;
-        & img{
+    min-height: 100vh;
+    z-index: 1;
+    color: #fff;
+    background: linear-gradient(-45deg, #9d6147, #303030, #10566f, #155345);
+    background-size: 400% 400%;
+    background-attachment: fixed;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    &__column{
+        display: flex;
+        padding: 1em;
+        justify-content: center;
+        @media (min-width: 1010px){
+            display: flex;
+        }
+        &__text {
             width: 100%;
-            height: 100%;
-          }
-     }
+            @media (min-width: 1010px) {
+                width: 50%;
+                padding: 1em;
+            }
+        }
+        &__img{
+            width: 50%;
+            padding: 0 0.5em;
+            @media (min-width: 1010px) {
+                width: 25%;
+                padding: 1em;
+            }
+            & img{
+                max-width: 300px;
+                width: 100%;
+            }
+        }
+    }
+    & h2{
+        font-family: 'Arvo', serif;
+    }
+    & h3{
+        font-size: 1.3em;
+    }
+    & p {
+        color: #fff;
+        margin-bottom: 1em;
+    }
+}
+/* #herdahandel{
+    background: url(/assets/media/images/background/desk.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#saufhampton {
+    background: url(/assets/media/images/background/laptop.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#fzg {
+    background: url(/assets/media/images/background/sc.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+.top-nav--img:hover {
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(1px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-2px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(2px, 0, 0);
+      }
+}

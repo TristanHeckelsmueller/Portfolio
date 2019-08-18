@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aa4805b-ad7b-4b24-8c38-87b8661af98c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/assets/styles/styles-05604148f2.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/styles/styles-05604148f2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -134,24 +134,6 @@
               <item name="portfolio_v2" type="b2602c69:ProjectViewProjectNode" />
               <item name="portfolio_v2" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="portfolio_v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio_v2" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio_v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio_v2" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio_v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio_v2" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -239,25 +221,28 @@
       <workItem from="1541338624207" duration="8074000" />
       <workItem from="1541349166556" duration="2275000" />
       <workItem from="1541351472428" duration="7048000" />
-      <workItem from="1541360196834" duration="2001000" />
+      <workItem from="1541360196834" duration="2570000" />
+      <workItem from="1541778700635" duration="5000" />
+      <workItem from="1542385248576" duration="596000" />
+      <workItem from="1543847069237" duration="9000" />
+      <workItem from="1544277367230" duration="140000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44090000" />
+    <option name="totallyTimeSpent" value="45409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18241903" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18241903" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50065106" side_tool="true" weight="0.25306123" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286517" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49934897" visible="true" weight="0.2710674" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49934897" visible="true" weight="0.2710674" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />

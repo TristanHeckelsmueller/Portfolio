@@ -1,29 +1,4 @@
 .about {
-    transform: translateX(-125vw);
-    background-color: #FFF9EB;
-    transition: 1s all ease;
-    z-index: -1;
-    padding: 1em;
-    &__content{
-        @mixin atMedium {
-            display: grid;
-            grid-template-columns: 50% 50%;
-        }
-     }
-    &__title{
-         text-align: center;
-         margin: 1em 0;
-     }
-     &__pg{
-        @mixin atMedium {
-            padding: 1em;
-        }
-      }
-    & img{
-        width: 100%;
-        @mixin atMedium{
-            height: 10%;
-            width: 100%;
-        }
-      }
+    height: 100vh;
+    background: #FFCD58;
 }

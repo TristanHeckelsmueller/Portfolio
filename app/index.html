@@ -8,7 +8,7 @@
     <meta name="description" content="Das Portfolio von Tristan Heckelsmüller">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#1B3B6F"/>
-    <link href="https://fonts.googleapis.com/css?family=Adamina|Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Varela+Round&display=swap" rel="stylesheet">
     <link rel="manifest" href="manifest.json">
     <!-- build:css assets/styles/styles.css -->
     <link rel="stylesheet" href="temp/styles/styles.css">
@@ -21,91 +21,21 @@
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser to improve your experience and security.</p>
 <![endif]-->
-
-<header class="header">
-
-    <div class="header__navigation">
-        <div class="header__navigation__dots" id="Dots">
-            <div class="header__navigation__dots--dot"></div>
-        </div>
-    </div>
-    <div class="header__navigation--desktop" id="Menu">
-        <ul class="header__navigation__list">
-            <li class="header__navigation__list--item" id="Main_link">Frontpage</li>
-            <li class="header__navigation__list--item" id="About_link">About me</li>
-            <li class="header__navigation__list--item" id="Portfolio_link">Portfolio</li>
-            <li class="header__navigation__list--item" id="CV_link">Curriculum Vitae</li>
-            <li class="header__navigation__list--item" id="Skills_link">Skills</li>
-            <li class="header__navigation__list--item" id="Contact_link">Contact</li>
-        </ul>
-    </div>
-</header>
-<section class="main section" id="Main">
-    <div class="main__wrapper">
-        <div class="main__title">
-            <h1>Tristan <br> Heckelsmüller</h1>
-        </div>
-        <div class="main__subtitle">
-            <h2>Webdevelopment - Online Marketing - Webdesign</h2>
-        </div>
-    </div>
-</section>
-<section class="about section" id="About">
-    <div class="about__title">
-        <h2>About me</h2>
-
-    </div>
-    <div class="about__content">
-        <div class="about__pg">
-            <p>
-                Mein Name ist Tristan Heckelsmüller, ich bin 22 Jahre alt und komme aus Untergermaringen, Ostallgäu. Ich studiere Multi-Media Marketing
-                seit 2015 an der HS Schmalkalden und arbeite seit 2018 selbstständig als Webentwickler.
-                Hobbies besitze ich auch, vorüberwiegend dreht sich aber alles um Fußball und Programmierung.
-
-            </p>
-            <p>
-                Ich würde mich als sehr extrovertierten Mensch beschreiben, der gerne auf Menschen zugeht und offen und ehrlich ist.
-                Ebenso bin ich sehr neugierig und wissensbegierig. Ich versuche mich stets weiter zu bilden und mehr in meinem Tätigkeitsbereich zu erlernen.
-            </p>
-            <p>
-
-            </p>
-        </div>
-        <div class="about__pg">
-            <p>
-                Mit Freunden an der Hoschschule Schmalkalden gründeten wir eine studentische Vereinigung, um das den ausgestorbenen Campus wieder zu beleben.
-                Diese Vereinigung wurde auch von Erfolg gekrönt und wir erweiterten unsere Zielgruppe auf das Internet.
-            </p>
-            <p>
-                Mit dem <a href="https://saufhampton.de" target="_blank" rel="noreferrer noopener">FC Saufhampton SM</a> haben wir eine erfolgreiches kleines Projekt gestartet, wo wir Videos produzieren
-                und uns mit Social Media befassen.
-
-            </p>
-
-        </div>
-        <div class="about__pg">
-                <img src="assets/media/images/myself/Myself.jpg" alt="">
-        </div>
-    </div>
-</section>
-<section class="portfolio section" id="Portfolio">
-    <div class="portfolio__tile" id="Speedpong">
-        <a href="http://speedpong.de" target="_blank" rel="noopener norefferer"><img src="assets/media/images/projects/Speedpong.png" alt=""></a>
-    </div>
-    <div class="portfolio__tile" id="Saufhampton">
-        <a href="https://saufhampton.de" target="_blank" rel="noopener norefferer"><img src="assets/media/images/projects/FCS.png" alt=""></a>
-    </div>
-    <div class="portfolio__tile" id="Herdahndel">
-        <a href="http://herdahandel.de" target="_blank" rel="noopener norefferer"><img src="assets/media/images/projects/HerdaHandel.png" alt=""></a>
-    </div>
-    <div class="portfolio__tile" id="Fzg">
-        <a href="http://fertigungszentrum.de" target="_blank" rel="noopener norefferer"><img src="assets/media/images/projects/FZG.png" alt=""></a>
-    </div>
-    <div class="portfolio__tile" id="Dao">
-        <a href="https://dao-home.com" target="_blank" rel="noopener norefferer"><img src="assets/media/images/projects/DAO.png" alt=""></a>
-    </div>
-</section>
+<div id="cursor"></div>
+<div class="menu" id="menu">
+    <ul class="menu__list">
+        <li class="menu__list--item" >home</li>
+        <li class="menu__list--item" id="Contact_link">contact</li>
+        <li class="menu__list--item" >cv</li>
+    </ul>
+</div>
+<div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+</div>
 <section class="cv section" id="CV">
+    <div id="close">X</div>
     <div class="timeline">
         <div class="container left">
             <div class="content">
@@ -153,26 +83,76 @@
         </div>
 
     </div>
-</section>
-<section class="skills section" id="Skills">
-    <canvas id="myChart"></canvas>
-</section>
-<section class="contact section" id="Contact">
-    <div class="contact__wrapper">
-        <h2>Kontakt</h2>
-        <div class="contact__content">
-            <p style="text-align: center">
-                Sie sind an Zusammenarbeit interessiert oder haben ein Jobangebot?<br>
-                Kontaktieren Sie mich einfach über einen der unten genannten Kanäle.
-            </p>
+</section>      
+<div class="top-nav">
+    <a href="#top"><img class="top-nav--img" src="/assets/media/icons/icons-192.png" alt="Top Arrow"></a>
+</div>
+<section class="main" id="top">
+    <header class="header">
 
-            <p><strong>Name:</strong><span class="align-right">Tristan Heckelsmüller</span></p>
-            <p><strong>E-Mail:</strong><span class="align-right">tristan.heckelsmueller@cursade.de</span></p>
-            <p><strong>Telefon:</strong><span class="align-right">+49 (0) 151 55631292</span></p>
-            <p><strong></strong></p>
+        <div class="header__navigation">
+            <div class="hamburger" id="hamburger">
+                <div id="hamburger--center" class="hamburger--center"></div>
+            </div>
+        </div>
+        <div class="header__navigation--desktop" id="Menu">
+            <ul class="header__navigation__list">
+                <li class="header__navigation__list--item">home</li>
+                <li class="header__navigation__list--item">contact</li>
+                <li class="header__navigation__list--item" id="CV_link">cv</li>
+            </ul>
+        </div>
+    </header>
+    <div class="main__content">
+        <div class="main__content__title">
+            <h3>Webdevelopment - Online Marketing - Webdesign</h3>
+            <div id="title-wrapper"> 
+                <h1  id="title">Tristan Heckelsmüller</h1>
+                <div class="tool-tip" id="Info1"><span>22 Jahre, Multi-Media Marketing Student, Selbstständiger Webentwickler</span></div>
+            </div>
+            <h3>Suchmaschinenoptimierung, Google Ads, Wordpress & WooCommerce</h3>
+        </div>
+        <div class="main__content__bar"></div>
+        <img class="main__content__ink" src="/assets/media/images/background/ink.svg" alt="Ink Splash">
+    </div>
+</section>
+<section class="portfolio">
+    <div class="portfolio--wrapper">
+
+        
+        <div class="portfolio__column" id="herdahandel">
+            <div class="portfolio__column__text">
+                <h2>Herda Handels GmbH</h2>
+                <h3>Forst & Gartentechnik seit 30 Jahren</h3>
+                <p>Wordpress, WooCommerce, HTML, CSS, JavaScript, NodeJS, PHP, Plugins, Mobile First</p>
+            </div>
+            <div class="portfolio__column__img"><img class="" src="/assets/media/images/projects/HerdaHandel.png" alt="Herda Handel Logo"></div>
+        </div>
+        <div class="portfolio__column" id="saufhampton">
+             <div class="portfolio__column__img"><img class="" src="/assets/media/images/projects/FCS.png" alt="FC Saufhampton SM Logo"></div>
+                 <div class="portfolio__column__text">
+                    <h2>FC Saufhampton SM</h2>
+                    <h3>Auffallen durch Umfallen</h3>
+                    <p>Wordpress, WooCommerce, NodeJS, HTML, CSS, JavaScript, PHP, SEO, Google Ads, Facebook Business</p>
+            </div>
+        </div>
+        <div class="portfolio__column" id="fzg">
+            <div class="portfolio__column__text">
+                <h2>Speedpong GmbH</h2>
+                <h3>Beerpong 2 Go</h3>
+            <p>HTML, CSS, SCSS, JavaScript, NodeJS, Gulp</p>
+        </div>
+        <div class="portfolio__column__img"><img class="" src="/assets/media/images/projects/speedpong.png" alt="Speedpong Logo"></div>
         </div>
     </div>
 </section>
+<div class="linear-border"></div>
+<section class="about">
+
+</section>
+<footer class="footer">
+
+</footer>
 <!-- build:js assets/scripts/App.js -->
 <script src="./temp/scripts/App.js"></script>
 <!-- endbuild -->
