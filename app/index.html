@@ -22,20 +22,27 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser to improve your experience and security.</p>
 <![endif]-->
 <div id="cursor"></div>
-<div class="menu" id="menu">
-    <ul class="menu__list">
-        <li class="menu__list--item" >home</li>
-        <li class="menu__list--item" id="Contact_link">contact</li>
-        <li class="menu__list--item" >cv</li>
-    </ul>
-</div>
-<div class="lines">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-</div>
+
+<section class="contact section" id="Contact">
+    
+        <div class="close" id="contact_close">X</div>
+    <div class="contact__wrapper">
+        <h2>Kontakt</h2>
+        <div class="contact__content">
+            <p style="text-align: center">
+                Sie sind an Zusammenarbeit interessiert oder haben ein Jobangebot?<br>
+                Kontaktieren Sie mich einfach über einen der unten genannten Kanäle.
+            </p>
+
+            <p><strong>Name: </strong><span class="align-right">Tristan Heckelsmüller</span></p>
+            <p><strong>E-Mail: </strong><span class="align-right">tristan.heckelsmueller@cursade.de</span></p>
+            <p><strong>Telefon: </strong><span class="align-right">+49 (0) 151 55631292</span></p>
+            <p><strong></strong></p>
+        </div>
+    </div>
+</section>
 <section class="cv section" id="CV">
-    <div id="close">X</div>
+    <div class="close" id="close">X</div>
     <div class="timeline">
         <div class="container left">
             <div class="content">
@@ -78,10 +85,15 @@
             <div class="content">
                 <h2>2018</h2>
                 <p>Gründung Einzelunternehmen als Webentwickler</p>
-                <p>Gründung Gesellschaft bürgerlichen Rechts S.R. Marketing</p>
+                <p>Gründung Berise GbR</p>
             </div>
         </div>
-
+        <div class="container right">
+            <div class="content">
+                <h2>2019</h2>
+                <p>vrstl. November: Bachelor Multi Media Marketing</p>
+            </div>
+        </div>
     </div>
 </section>      
 <div class="top-nav">
@@ -90,15 +102,10 @@
 <section class="main" id="top">
     <header class="header">
 
-        <div class="header__navigation">
-            <div class="hamburger" id="hamburger">
-                <div id="hamburger--center" class="hamburger--center"></div>
-            </div>
-        </div>
         <div class="header__navigation--desktop" id="Menu">
             <ul class="header__navigation__list">
                 <li class="header__navigation__list--item">home</li>
-                <li class="header__navigation__list--item">contact</li>
+                <li class="header__navigation__list--item" id="Contact_link">contact</li>
                 <li class="header__navigation__list--item" id="CV_link">cv</li>
             </ul>
         </div>
@@ -118,8 +125,6 @@
 </section>
 <section class="portfolio">
     <div class="portfolio--wrapper">
-
-        
         <div class="portfolio__column" id="herdahandel">
             <div class="portfolio__column__text">
                 <h2>Herda Handels GmbH</h2>
@@ -136,18 +141,32 @@
                     <p>Wordpress, WooCommerce, NodeJS, HTML, CSS, JavaScript, PHP, SEO, Google Ads, Facebook Business</p>
             </div>
         </div>
-        <div class="portfolio__column" id="fzg">
+        <div class="portfolio__column" id="speedpong">
             <div class="portfolio__column__text">
                 <h2>Speedpong GmbH</h2>
                 <h3>Beerpong 2 Go</h3>
             <p>HTML, CSS, SCSS, JavaScript, NodeJS, Gulp</p>
+            </div>
+            <div class="portfolio__column__img"><img class="" src="/assets/media/images/projects/speedpong.png" alt="Speedpong Logo"></div>
         </div>
-        <div class="portfolio__column__img"><img class="" src="/assets/media/images/projects/speedpong.png" alt="Speedpong Logo"></div>
+        <div class="portfolio__column" id="saufhampton">
+            <div class="portfolio__column__img"><img class="" src="/assets/media/images/projects/DAO.png" alt="FC Saufhampton SM Logo"></div>
+                <div class="portfolio__column__text">
+                   <h2>DAO Home</h2>
+                   <p>Wordpress, DIVI Theme, NodeJS, HTML, CSS, JavaScript, PHP, SEO, Google Ads</p>
+           </div>
+       </div>
+       <div class="portfolio__column" id="herdahandel">
+        <div class="portfolio__column__text">
+            <h2>Fertigungszentrum Grimmenthal GmbH</h2>
+            <p>Wordpress, WooCommerce, HTML, CSS, JavaScript, NodeJS, PHP, Plugins, Mobile First</p>
         </div>
+        <div class="portfolio__column__img"><img class="" src="/assets/media/images/projects/FZG.png" alt="Herda Handel Logo"></div>
+    </div>
     </div>
 </section>
 <div class="linear-border"></div>
-<section class="about">
+<section class="skills">
 
 </section>
 <footer class="footer">

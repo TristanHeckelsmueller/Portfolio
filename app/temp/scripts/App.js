@@ -20982,12 +20982,20 @@ var Modal = function Modal() {
 
     var close = document.getElementById("close");
 
+    var con_close = document.getElementById("contact_close");
+
+    contact_link.addEventListener("click", function () {
+        contact.classList.toggle("section--show");
+    }, false);
     cv_link.addEventListener("click", function () {
         cv.classList.toggle("section--show");
     }, false);
+
     close.addEventListener("click", function () {
         cv.classList.remove("section--show");
-        console.log(cv);
+    }, false);
+    con_close.addEventListener("click", function () {
+        contact.classList.remove("section--show");
     }, false);
 };
 
@@ -31617,24 +31625,6 @@ var Animation = function Animation() {
         id.classList.remove("tool-tip--open");
         wrapper.classList.add("title-wwrapper");
         wrapper.classList.remove("title-wwrapper--open");
-    }
-
-    var hamburger = document.getElementById("hamburger");
-    var hamburger_center = document.getElementById("hamburger--center");
-    var menu = document.getElementById("menu");
-    hamburger.addEventListener('mouseover', hamOver);
-    hamburger.addEventListener('mouseout', hamOut);
-    hamburger.addEventListener('click', hamClick);
-    function hamOver() {
-        hamburger_center.classList.add("hamburger--hover");
-    }
-    function hamOut() {
-        hamburger_center.classList.remove("hamburger--hover");
-    }
-    function hamClick() {
-        menu.classList.toggle("menu--open");
-        hamburger_center.classList.toggle("hamburger--center--white");
-        hamburger.classList.toggle("hamburger--white");
     }
 };
 

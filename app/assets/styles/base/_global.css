@@ -99,7 +99,7 @@ a:hover, .header__navigation__list--item:hover {
   animation: Gradient 2s cubic-bezier(.36,.07,.19,.97) both;
   animation-iteration-count: infinite;
   width: 100%;
-  height: 5vh;
+  height: 2vh;
 }
 
 @keyframes Gradient {
@@ -139,30 +139,5 @@ a:hover, .header__navigation__list--item:hover {
   height: 30px !important;
   transform: rotateZ(360deg) !important;
   transition:  width 1s, height 1s, transform 1s;
-}
-
-::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar-thumb
-{
-	background-color: #F90;	
-	background-image: -webkit-linear-gradient(45deg,
-	                                          rgba(255, 255, 255, .2) 25%,
-											  transparent 25%,
-											  transparent 50%,
-											  rgba(255, 255, 255, .2) 50%,
-											  rgba(255, 255, 255, .2) 75%,
-											  transparent 75%,
-											  transparent)
 }
 

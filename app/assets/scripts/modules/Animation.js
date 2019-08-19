@@ -24,24 +24,6 @@ class Animation {
 
         }
 
-        let hamburger = document.getElementById("hamburger");
-        let hamburger_center = document.getElementById("hamburger--center");
-        let menu = document.getElementById("menu");
-        hamburger.addEventListener('mouseover', hamOver);
-        hamburger.addEventListener('mouseout', hamOut);
-        hamburger.addEventListener('click', hamClick);
-        function hamOver() {
-            hamburger_center.classList.add("hamburger--hover");
-        }
-        function hamOut(){
-            hamburger_center.classList.remove("hamburger--hover");
-        }
-        function hamClick() {
-            menu.classList.toggle("menu--open");
-            hamburger_center.classList.toggle("hamburger--center--white");
-            hamburger.classList.toggle("hamburger--white");
-            
-        }
     }
 }
 

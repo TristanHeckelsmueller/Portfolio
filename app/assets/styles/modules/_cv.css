@@ -1,6 +1,6 @@
 .cv{
     transform: translateX(-180vw) translateY(-150vh);
-    background-color: #fff9eb;
+    background-color: #919191;
     transition: 1s all ease;
     padding: 1em;
     z-index: 1;
