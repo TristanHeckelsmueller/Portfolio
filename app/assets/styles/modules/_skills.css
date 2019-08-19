@@ -2,4 +2,53 @@
 .skills {
     background: #155345;
     min-height: 100vh;
+    color: #fff;
+    padding: 3em 1em;
+    background: url('/assets/media/images/background/desk.jpg');
+    background-size: cover;
+    &__wrapper {
+        background: #303030;
+        padding: 1em;
+        width: 100%;
+        border-radius: 20px;
+    }
+    & ul {
+        margin: 0.25em 0 1em 0;
+    }
+    & li {
+        margin-top: 0.25em;
+    }
+    & img {
+        width: 13px;
+        height: 13px;
+        margin-left: 0.5em;
+        @media (min-width: 800px){
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+@media (min-width: 800px){
+    .skills__wrapper{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+.info_con {
+    display: none;
+    background: #155345;
+    border-radius: 20px;
+    padding: 0.5em;
+    color: #fff;
+    cursor: pointer;
+    width: 0px;
+    font-size: 0px;
+    transition: width 1s, font-size 1s;
+
+}
+.info--show {
+    display: block !important;
+    width: 100% !important;
+    font-size: 15px !important;
+    transition: width 1s, font-size 1s;
 }

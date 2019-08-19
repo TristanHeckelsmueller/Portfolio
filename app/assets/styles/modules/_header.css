@@ -12,6 +12,7 @@
             display: flex;
             &--item {
                 margin: 0 3rem 0 0;
+                cursor: pointer;
             }
         }
     }
@@ -28,4 +29,7 @@
     & img{
         width: 100%;
     }
+}
+.close {
+    cursor: pointer;
 }

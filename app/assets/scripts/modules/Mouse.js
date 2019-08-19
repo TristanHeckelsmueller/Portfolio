@@ -1,26 +1,26 @@
-import $ from 'jquery';
+// import $ from 'jquery';
 
-class Mouse {
-    constructor() {
-        $(document).on('mousemove', function(e){
-            $('#cursor').css({
-               left:  e.pageX + 2,
-               top:   e.pageY + 2
-            });
-        });
-        $(document).on('click', function(e){
-            $('#cursor').addClass("cursor--click");
+// class Mouse {
+//     constructor() {
+//         $(document).on('mousemove', function(e){
+//             $('#cursor').css({
+//                left:  e.pageX + 2,
+//                top:   e.pageY + 2
+//             });
+//         });
+//         $(document).on('click', function(e){
+//             $('#cursor').addClass("cursor--click");
 
-            setTimeout( () => {
-                $('#cursor').removeClass("cursor--click");
-            }, 500);
-        });
+//             setTimeout( () => {
+//                 $('#cursor').removeClass("cursor--click");
+//             }, 500);
+//         });
         
-    }
+//     }
 
-}
+// }
 
-export default Mouse;
+// export default Mouse;
 // function findViewCoords(mouseEvent)
 // {
 //   var xpos;

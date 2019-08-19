@@ -470,20 +470,20 @@ html {
 @media (min-width: 750px) {
 
 html {
-    font-size: 18px
+    font-size: 16px
 }
   }
 
 @media (min-width: 1400px) {
 
 html {
-    font-size: 24px
+    font-size: 18px
 }
   }
 
 @media (min-width: 1200px){
   html{
-    cursor: none;
+    cursor: auto;
   }
 }
 
@@ -542,20 +542,20 @@ h2 {
   }
 
 h3 {  font-family: 'Varela Round', sans-serif;
-  font-size: 1em;
+  font-size: 18px;
 }
 
 @media (min-width: 750px) {
 
 h3 {
-  font-size: 1em
+  font-size: 22px
 }
   }
 
 @media (min-width: 1400px) {
 
 h3 {
-  font-size: 1em
+  font-size: 22px
 }
   }
 
@@ -571,7 +571,7 @@ a {
   text-decoration: none;
   font-weight: 900;
   font-family: 'Poppins', sans-serif;
-  cursor: none;
+  cursor: pointer;
 }
 
 a:visited{
@@ -631,10 +631,9 @@ a:hover, .header__navigation__list--item:hover {
 }
 
 #cursor {
-  cursor: none;
+  cursor: auto;
   width: 25px;
   height: 25px;
-  background: url("/assets/media/images/cursor.png") no-repeat left top;
   background-size: contain;
   position: absolute;
   top: 0;
@@ -689,6 +688,7 @@ a:hover, .header__navigation__list--item:hover {
 
 .header__navigation__list--item {
                 margin: 0 3rem 0 0;
+                cursor: pointer;
             }
 
 .top-nav{
@@ -709,6 +709,10 @@ a:hover, .header__navigation__list--item:hover {
 .top-nav img{
         width: 100%;
     }
+
+.close {
+    cursor: pointer;
+}
 
 .section{
     width: 80vw;
@@ -1205,4 +1209,71 @@ a:hover, .header__navigation__list--item:hover {
     .right {
         left: 0%;
     }
+}
+
+.skills {
+    background: #155345;
+    min-height: 100vh;
+    color: #fff;
+    padding: 3em 1em;
+    background: url('/assets/media/images/background/desk.jpg');
+    background-size: cover;
+}
+
+.skills__wrapper {
+        background: #303030;
+        padding: 1em;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+.skills ul {
+        margin: 0.25em 0 1em 0;
+    }
+
+.skills li {
+        margin-top: 0.25em;
+    }
+
+.skills img {
+        width: 13px;
+        height: 13px;
+        margin-left: 0.5em;
+    }
+
+@media (min-width: 800px){
+
+.skills img {
+            width: 16px;
+            height: 16px
+    }
+        }
+
+@media (min-width: 800px){
+    .skills__wrapper{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+.info_con {
+    display: none;
+    background: #155345;
+    border-radius: 20px;
+    padding: 0.5em;
+    color: #fff;
+    cursor: pointer;
+    width: 0px;
+    font-size: 0px;
+    -webkit-transition: width 1s, font-size 1s;
+    transition: width 1s, font-size 1s;
+
+}
+
+.info--show {
+    display: block !important;
+    width: 100% !important;
+    font-size: 15px !important;
+    -webkit-transition: width 1s, font-size 1s;
+    transition: width 1s, font-size 1s;
 }
