@@ -1,5 +1,8 @@
 
 .skills {
+    & h2{
+        font-family: Arvo, serif;
+    }
     background: #155345;
     min-height: 100vh;
     color: #fff;
@@ -43,12 +46,13 @@
     cursor: pointer;
     width: 0px;
     font-size: 0px;
-    transition: width 1s, font-size 1s;
+    transition: display 0s, width 1s, font-size 1s;
 
 }
 .info--show {
     display: block !important;
-    width: 100% !important;
+    position: absolute;
+    width: auto !important;
     font-size: 15px !important;
-    transition: width 1s, font-size 1s;
+    transition: display 0s, width 1s, font-size 1s;
 }
