@@ -9,18 +9,28 @@
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
     animation: Gradient 15s ease infinite;
+    &--wrapper {
+        margin: 0 auto;
+        width: 100%;
+        padding: 2em;
+        @media (min-width: 800px) {
+            width: 50%;
+            padding: 0;
+
+        }
+    }
     &__column{
         display: flex;
-        padding: 1em;
         justify-content: center;
+        margin-top: 3em;
         @media (min-width: 1010px){
             display: flex;
         }
         &__text {
             width: 100%;
             @media (min-width: 1010px) {
-                width: 50%;
-                padding: 1em;
+                width: 75%;
+                padding: 0 1em 0 0;
             }
         }
         &__img{
