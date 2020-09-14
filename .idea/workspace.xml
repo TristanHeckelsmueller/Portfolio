@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aa4805b-ad7b-4b24-8c38-87b8661af98c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/assets/media/images/projects/deinbier.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/assets/media/images/projects/webdev.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +143,7 @@
       <workItem from="1578902565108" duration="4385000" />
       <workItem from="1578907540537" duration="8726000" />
       <workItem from="1578987333453" duration="1456000" />
-      <workItem from="1600071843955" duration="1820000" />
+      <workItem from="1600071843955" duration="2062000" />
     </task>
     <servers />
   </component>
